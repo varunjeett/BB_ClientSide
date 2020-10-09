@@ -1,7 +1,30 @@
-.show__Booking {
+.ShowClients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding:40px;
     margin: 20px 0;
     border:1px solid lightgray;
     background-color: white;
-    position: relative;
+}
+
+.show__Booking {
+    flex:0.80;
+}
+
+.delete__iconbox {
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete__iconbox:hover {
+    cursor: pointer;
+}
+
+.delete__icon {
+    color: black;
 }
