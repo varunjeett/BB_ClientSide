@@ -11,14 +11,16 @@ function AdminBooking() {
   const [{ user }] = useStateValue();
 
   useEffect(() => {
-    db.collection("info").orderBy("timestamp","desc").onSnapshot((snapshot) =>
-      setClients(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      )
-    );
+    db.collection("info")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setClients(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
   }, []);
 
   return (
@@ -30,10 +32,10 @@ function AdminBooking() {
       </nav>
 
       <div className="booking">
-        <h2>
+        <h1 className="title">
           Hii <span className="user__name">{user?.email}</span> , Your Potential
           Clients
-        </h2>
+        </h1>
         {clients?.map((client) => (
           <ShowClients client={client} />
         ))}

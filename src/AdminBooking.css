@@ -14,15 +14,19 @@
   object-fit: contain;
 }
 
-
-.booking {
-    padding: 20px 80px;
+.title{
+  margin: 30px 30px;
 }
 
 .user__name {
   color: rgb(46, 187, 46);
 }
 
-.booking > h1 {
-    margin: 30px 0;
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
