@@ -1,0 +1,143 @@
+.header{
+    background: rgb(255,153,51);
+    background: linear-gradient(90deg, rgba(255,153,51,1) 0%, rgba(255,255,255,1) 50%, rgba(19,136,8,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo1{
+    flex: 0.3;
+    width: fit-content ;  
+}
+
+.header__logo{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none !important;
+
+}
+
+.header__logo__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.underlinks{
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.email{
+    margin-top: 2%;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.header__logo > img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px;
+    margin-right: 5%;
+}
+
+.header__middle{
+    flex: 0.4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__middle > img{
+    height: 80px;
+    width: 50px;
+    background-color: transparent;
+}
+.header__middle > span {
+    color: black;
+    font-size: 2.5rem;    
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+
+}
+.header__links{
+    flex: 0.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+
+
+.links{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+
+}
+
+
+
+                
+@media screen and (max-width: 960px) {
+
+
+    
+  
+    .underlinks{
+        font-size: 0.2rem;
+    }
+
+    .email{
+        font-size: 0.2rem;
+    }
+    
+    .header__logo > img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .header__middle{
+        flex: 0.3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    
+    .header__middle > img{
+        height: 30px;
+        width: 20px;
+    }
+    .header__middle > span {
+        color: black;
+        font-size: 0.4rem;
+        text-decoration: none !important;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    .header__links{
+        flex: 0.3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: black;
+    }
+    
+    
+    .links{
+        font-size:0.4rem;
+    }
+    
+    
+
+}

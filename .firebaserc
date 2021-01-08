@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "bada-business-simran"
+    "default": "gstonlinefiling-1a1c4"
   },
   "targets": {
-    "bada-business-simran": {
+    "gstonlinefiling-1a1c4": {
       "hosting": {
         "admin": [
-          "bada-business-simran"
+          "suvidhakendraadmin"
         ]
       }
     }

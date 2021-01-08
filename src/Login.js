@@ -9,8 +9,8 @@ import { actionTypes } from "./reducer";
 function Login() {
   // eslint-disable-next-line
   const [state, dispatch] = useStateValue();
-  const [email, setEmail] = useState("t@g.com");
-  const [password, setPassword] = useState("pppppp");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
 
   const signIn = (event) => {
